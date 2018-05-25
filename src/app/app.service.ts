@@ -34,6 +34,7 @@ export class AppService {
     return Promise.reject(error.message || error);
   }
 
+
   private handleErrorObservable(error: Response | any) {
     console.error(error.message || error);
     return Observable.throw(error.message || error);
