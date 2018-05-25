@@ -8,7 +8,6 @@ import {Observable} from 'rxjs';
 @Injectable()
 export class AppService {
 
-
   constructor(private http: Http) {
   }
 
@@ -24,7 +23,6 @@ export class AppService {
       .map(response => response.json() )
       .catch(this.handleErrorObservable)
   }
-
 
   private extractData(res: Response) {
     let body = res.json();
